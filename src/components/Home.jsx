@@ -1,9 +1,11 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import logo from "../images/logo.png"
 
-function Nav() {
+function Home() {
   return (
-    <header>
+    <div className="home">
+      <header>
       <nav className="nav">
         <div className="menu-btn">
           <div className="btn-line"></div>
@@ -15,18 +17,16 @@ function Nav() {
         </span>
         <ul className="nav-links">
           <li className="nav-item">
-            <span href='/pages/about.html'>01. HISTORY</span>
-            <hr/>
+            <Link to='/history'>01. HISTORY</Link>
           </li>
           <li className="nav-item">
-            <span href='/pages/contact.html'>02. TEAM</span>
-            <hr/>
+            <Link to='/team'>02. TEAM</Link>
           </li>
         </ul>
       </nav>
     </header>
-
+    </div>
   )
 }
 
-export default Nav
+export default Home

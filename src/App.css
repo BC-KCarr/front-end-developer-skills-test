@@ -68,18 +68,14 @@ hr {
   justify-content: flex-end;
 }
 
-.nav-links li {
+.nav-links a {
   padding-left: 2rem;
   padding-right: 2rem;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   color: #f7fafc;
   font-family: 'Open Sans', sans-serif;
-}
-
-.nav-item {
-  /* text-decoration: underline; */
-
+  font-size: 14px;
 }
 
 .menu-btn {
