@@ -1,1 +1,109 @@
+body, html {
+  height: 100vh;
+}
+
+.home {
+  background-image: url('images/backgroundImage1.png');
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header ul {
+  list-style-type: none;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+hr {
+  height: 1px;
+  background-color: white;
+  border: none;
+}
+
+.menu-btn {
+  position: absolute;
+  z-index: 3;
+  right: 35px;
+  top: 60px;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+}
+
+.menu-btn.close {
+  transform: rotate(180deg);
+}
+
+/* Styling the three lines to make it an X */
+.menu-btn.close .btn-line:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-btn.close .btn-line:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-btn.close .btn-line:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -6px);
+}
+
+.menu-btn .btn-line {
+  width: 28px;
+  height: 3px;
+  margin: 0 0 5px 0;
+  background: black;
+  transition: all 0.5s ease-out;
+}
+
+
+
+/* .nav-links a {
+  clear: right;
+  text-decoration: none;
+  color: gray;
+  margin: 0 10px;
+  line-height: 70px;
+  margin-left: 3rem !important;
+  color: inherit;
+  text-decoration: inherit;
+  font-size: 0.9rem;
+  margin-right: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 70px;
+  font-weight: 600;
+  letter-spacing: 0.025em;
+  transition-duration: 300ms;
+  padding-bottom: 0.25rem;
+  border-bottom-width: 2px;
+  border-color: transparent;
+  transition-property: display;
+} */
+
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-links li {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  color: #f7fafc;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.nav-item {
+  /* text-decoration: underline; */
+  padding-bottom: 5px;
+}
+
+.menu-btn {
+  visibility: hidden;
+}
 
