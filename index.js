@@ -1,33 +1,38 @@
 
 const toggleBtn = document.querySelector('.menu-btn')
+const toggleBtnMiddle = document.querySelector('.menu-btn-middle')
 const nav = document.querySelector('.nav-links')
-const navItems = document.querySelectorAll('.nav-items')
-const hero = document.querySelector('.bg-image-top')
+const navMiddle = document.querySelector('.nav-links-colored')
 
 toggleBtn.addEventListener('click', toggleMenu)
+toggleBtnMiddle.addEventListener('click', toggleMenuMiddle)
 
 let open = false
 
 function toggleMenu() {
   if(!open) {
-    hero.classList.add('show')
     toggleBtn.classList.add('close')
     nav.classList.add('show')
-    navItems.forEach((item) => {
-      item.classList.add('show')
-    })
     open = true
   } else {
-    hero.classList.remove('show')
-    hero.classList.add('close')
     toggleBtn.classList.remove('close')
     nav.classList.remove('show')
-    navItems.forEach((item) => {
-      item.classList.remove('show')
-    })
     open = false
   }
+}
 
+let middleOpen = false
+
+function toggleMenuMiddle() {
+  if(!middleOpen) {
+    toggleBtnMiddle.classList.add('close')
+    navMiddle.classList.add('show')
+    middleOpen = true
+  } else {
+    toggleBtnMiddle.classList.remove('close')
+    navMiddle.classList.remove('show')
+    middleOpen = false
+  }
 }
 
 let slide_index = 1;

@@ -4,7 +4,12 @@ body, html {
   padding: 0;
   font-family: 'Open Sans', sans-serif;
   overflow-x: hidden;
-  overflow-y: scroll; 
+  /* overflow-y: scroll; */
+  scroll-behavior: smooth; 
+}
+.outside-container{
+  min-height: 100vh;
+  position: relative;
 }
 
 .bg-image-top {
@@ -102,19 +107,7 @@ header ul {
   justify-content: space-between;
 }
 
-.nav-links-colored {
-  display: flex;
-  justify-content: flex-end;
-}
 
-.nav-links-colored a {
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-  color: #3f4f6c;
-  font-size: 14px;
-}
 
 .history-content {
   display: flex;
@@ -426,16 +419,6 @@ footer img {
 
   .nav-links.show {
     visibility: visible;
-  }
-
-  .hero.show {
-    margin-top: 200px;
-    transition-duration: 0.8s;
-    transition-property: margin-top;
-  }
-
-  .hero.close {
-    transition-duration: 0.5s;
   }
 
   /* Adding a transition delay to the items in the navigation menu */

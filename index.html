@@ -8,6 +8,7 @@
     content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" type="text/css" href="index.css">
+  <link rel="stylesheet" type="text/css" href="accordion.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,700&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -16,159 +17,161 @@
 </head>
 
 <body>
-  <section>
-    <div class="bg-image-top">
+  <div class="outside-container">
+    <section>
+      <div class="bg-image-top">
+        <header>
+          <nav class="nav">
+            <div class="menu-btn">
+              <div class="btn-line"></div>
+              <div class="btn-line"></div>
+              <div class="btn-line"></div>
+            </div>
+            <a href="/index.html" class="page-title">
+              <img src="images/logo.png" alt="logo" />
+            </a>
+            <ul class="nav-links">
+              <li class="nav-item">
+                <a href='/index.html#history'>01. HISTORY</a>
+              </li>
+              <li class="nav-item">
+                <a href='/index.html#team'>02. TEAM</a>
+              </li>
+            </ul>
+          </nav>
+        </header>
+      </div>
+    </section>
+    <section>
       <header>
         <nav class="nav">
-          <div class="menu-btn">
-            <div class="btn-line"></div>
-            <div class="btn-line"></div>
-            <div class="btn-line"></div>
+          <div class="menu-btn-middle">
+            <div class="btn-line-middle"></div>
+            <div class="btn-line-middle"></div>
+            <div class="btn-line-middle"></div>
           </div>
           <a href="/index.html" class="page-title">
-            <img src="images/logo.png" alt="logo" />
+            <img src="images/logo-with-text.png" alt="logo" />
           </a>
-          <ul class="nav-links">
-            <li class="nav-item">
+          <ul class="nav-links-colored">
+            <li class="nav-item-middle">
               <a href='/index.html#history'>01. HISTORY</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item-middle">
               <a href='/index.html#team'>02. TEAM</a>
             </li>
           </ul>
         </nav>
       </header>
-    </div>
-  </section>
-  <section>
-    <!-- <header>
-      <nav class="nav">
-        <div class="menu-btn">
-          <div class="btn-line"></div>
-          <div class="btn-line"></div>
-          <div class="btn-line"></div>
+    </section>
+    <section>
+      <div class="bg-image-middle">
+        <div class="history-content">
+          <div class="title-container">
+            <div id="history">01.<span>HISTORY</span></div>
+          </div>
+          <p class="history-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusm tempor
+            incididunt ut labore et dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur.
+          </p>
         </div>
-        <a href="/index.html" class="page-title">
-          <img src="images/logo-with-text.png" alt="logo" />
-        </a>
-        <ul class="nav-links-colored">
-          <li class="nav-item">
-            <a href='/index.html#history'>01. HISTORY</a>
-          </li>
-          <li class="nav-item">
-            <a href='/index.html#team'>02. TEAM</a>
-          </li>
-        </ul>
-      </nav>
-    </header> -->
-  </section>
-  <section>
-    <div class="bg-image-middle">
-      <div class="history-content">
+        <div class="image-carosel-container">
+          <div class="slidercontainer">
+            <div class="showSlide fade">
+              <img src="./images/backgroundImage1.png" />
+            </div>
+            <div class="showSlide fade">
+              <img src="./images/hiker.jpg" />
+            </div>
+            <div class="showSlide fade">
+              <img src="./images/backgroundImage1.png" />
+            </div>
+            <div class="showSlide fade">
+              <img src="./images/hiker.jpg" />
+            </div>
+            <div class="showSlide fade">
+              <img src="./images/backgroundImage1.png" />
+            </div>
+            <div class="showSlide fade">
+              <img src="./images/hiker.jpg" />
+            </div>
+            <div class="showSlide fade">
+              <img src="./images/backgroundImage1.png" />
+            </div>
+            <div class="showSlide fade">
+              <img src="./images/hiker.jpg" />
+            </div>
+            <div class="showSlide fade">
+              <img src="./images/backgroundImage1.png" />
+            </div>
+            <div class="showSlide fade">
+              <img src="./images/hiker.jpg" />
+            </div>
+            <div class="showSlide fade">
+              <img src="./images/backgroundImage1.png" />
+            </div>
+            <div class="showSlide fade">
+              <img src="./images/hiker.jpg" />
+            </div>
+            <!-- Navigation arrows -->
+            <a class="left" onclick="backSlide(-4)">❮</a>
+            <a class="right" onclick="nextSlide(4)">❯</a>
+          </div>
+          <div class="dots">
+            <ol>
+              <li class="dot"></li>
+              <li class="dot"></li>
+              <li class="dot"></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="team-content">
         <div class="title-container">
-          <div id="history">01.<span>HISTORY</span></div>
+          <div id="team">02.<span>CLIMB</span></div>
         </div>
-        <p class="history-text">
+        <p class="team-text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusm tempor
-          incididunt ut labore et dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur.
+          incididunt ut labore et dolore magna aliqua.
         </p>
       </div>
-      <div class="image-carosel-container">
-        <div class="slidercontainer">
-          <div class="showSlide fade">
-            <img src="./images/backgroundImage1.png" />
-          </div>
-          <div class="showSlide fade">
-            <img src="./images/hiker.jpg" />
-          </div>
-          <div class="showSlide fade">
-            <img src="./images/backgroundImage1.png" />
-          </div>
-          <div class="showSlide fade">
-            <img src="./images/hiker.jpg" />
-          </div>
-          <div class="showSlide fade">
-            <img src="./images/backgroundImage1.png" />
-          </div>
-          <div class="showSlide fade">
-            <img src="./images/hiker.jpg" />
-          </div>
-          <div class="showSlide fade">
-            <img src="./images/backgroundImage1.png" />
-          </div>
-          <div class="showSlide fade">
-            <img src="./images/hiker.jpg" />
-          </div>
-          <div class="showSlide fade">
-            <img src="./images/backgroundImage1.png" />
-          </div>
-          <div class="showSlide fade">
-            <img src="./images/hiker.jpg" />
-          </div>
-          <div class="showSlide fade">
-            <img src="./images/backgroundImage1.png" />
-          </div>
-          <div class="showSlide fade">
-            <img src="./images/hiker.jpg" />
-          </div>
-          <!-- Navigation arrows -->
-          <a class="left" onclick="backSlide(-4)">❮</a>
-          <a class="right" onclick="nextSlide(4)">❯</a>
-        </div>
-        <div class="dots">
-          <ol>
-            <li class="dot"></li>
-            <li class="dot"></li>
-            <li class="dot"></li>
-          </ol>
+      <div class="mountain-tab-container">
+        <ol>
+          <li class="tab active">MOUNTAIN 1</li>
+          <li class="tab">MOUNTAIN 2</li>
+        </ol>
+      </div>
+      <div class="bg-imgage-bottom">
+        <div class="schedule">
+          <span>SCHEDULE</span>
+          <table>
+            <tr>
+              <th>25 Nov 2020</th>
+              <td>Vestibulum viverra</td>
+            </tr>
+            <tr>
+              <th>28 Nov 2020</th>
+              <td>Vestibulum viverra</td>
+            </tr>
+            <tr>
+              <th>18 Nov 2020</th>
+              <td>Vestibulum viverra</td>
+            </tr>
+            <tr>
+              <th>7 Jan 2021</th>
+              <td>Vestibulum viverra</td>
+            </tr>
+          </table>
+          
         </div>
       </div>
-    </div>
-  </section>
-  <section>
-    <div class="team-content">
-      <div class="title-container">
-        <div id="team">02.<span>CLIMB</span></div>
-      </div>
-      <p class="team-text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusm tempor
-        incididunt ut labore et dolore magna aliqua.
-      </p>
-    </div>
-    <div class="mountain-tab-container">
-      <ol>
-        <li class="tab active">MOUNTAIN 1</li>
-        <li class="tab">MOUNTAIN 2</li>
-      </ol>
-    </div>
-    <div class="bg-imgage-bottom">
-      <div class="schedule">
-        <span>SCHEDULE</span>
-        <table>
-          <tr>
-            <th>25 Nov 2020</th>
-            <td>Vestibulum viverra</td>
-          </tr>
-          <tr>
-            <th>28 Nov 2020</th>
-            <td>Vestibulum viverra</td>
-          </tr>
-          <tr>
-            <th>18 Nov 2020</th>
-            <td>Vestibulum viverra</td>
-          </tr>
-          <tr>
-            <th>7 Jan 2021</th>
-            <td>Vestibulum viverra</td>
-          </tr>
-        </table>
-        
-      </div>
-    </div>
-  </section>
+    </section>
+  </div>
   <footer>
     <div class="footer-logo-container">
       <img src="./images/logo-with-text-footer.png" alt="logo" />

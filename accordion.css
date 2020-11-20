@@ -1,0 +1,93 @@
+.menu-btn-middle {
+  position: absolute;
+  z-index: 3;
+  right: 35px;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+  padding-top: 10px;
+}
+
+.menu-btn-middle.close {
+  transform: rotate(180deg);
+}
+
+/* Styling the three lines to make it an X */
+.menu-btn-middle.close .btn-line-middle:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-btn-middle.close .btn-line-middle:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-btn-middle.close .btn-line-middle:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -6px);
+}
+
+.menu-btn-middle .btn-line-middle {
+  width: 28px;
+  height: 3px;
+  margin: 0 0 5px 0;
+  background: black;
+  transition: all 0.5s ease-out;
+}
+.nav-links-colored {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-links-colored a {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  color: #3f4f6c;
+  font-size: 14px;
+}
+
+.menu-btn-middle {
+  visibility: hidden;
+}
+
+@media only screen and (max-width: 500px) {
+  .menu-btn-middle {
+    visibility: visible;
+    cursor: pointer;
+  }
+
+  .nav-links-colored {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    visibility: hidden;
+    padding: 0;
+  }
+
+  .nav-links-colored a {
+    display: block;
+    border-bottom: 1px solid #EAEAEB;
+    padding-top: 53px;
+  }
+
+  .nav-links-colored.show {
+    visibility: visible;
+  }
+
+  /* Adding a transition delay to the items in the navigation menu */
+  .nav-item-middle:nth-child(1) {
+    transition-delay: 0.01s;
+    text-align: center;
+  }
+
+  .nav-item-middle:nth-child(2) {
+    transition-delay: 0.02s;
+  }
+
+  .nav-item-middle:nth-child(3) {
+    transition-delay: 0.03s;
+  }
+
+  .nav img {
+    display: none;
+  }
+}
