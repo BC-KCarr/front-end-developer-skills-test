@@ -57,7 +57,6 @@ function displaySlides(n) {
     })
   }
   
-  console.log(slide_index)
   slides[slide_index - 1].style.display = "block";
   slides[slide_index].style.display = "block";
   slides[slide_index + 1].style.display = "block";

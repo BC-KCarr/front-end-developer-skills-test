@@ -1,7 +1,10 @@
 body, html {
   height: 100vh;
   margin: 0;
+  padding: 0;
   font-family: 'Open Sans', sans-serif;
+  overflow-x: hidden;
+  overflow-y: scroll; 
 }
 
 .bg-image-top {
@@ -131,6 +134,7 @@ header ul {
   font-family: 'Oswald', sans-serif;
   margin: 0;
   padding-bottom: 0;
+  font-weight: 900;
 }
 
 .title-container span {
@@ -161,6 +165,7 @@ header ul {
   vertical-align: baseline;
   background: rgb(60, 74, 99, 0.7);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -170,7 +175,6 @@ header ul {
   flex-direction: row;
   position: relative;
   max-width: 1600px;
-  margin: auto; 
 }
 
 .showSlide {  
@@ -202,16 +206,12 @@ header ul {
   .left:hover, .right:hover {  
       background-color: rgba(115, 115, 115, 0.8);  
   }  
-  
-.active {  
-  background-color: #717171;  
-}
 
 ol{
   list-style: none;
   width:100%;
 }
-ol li{
+.dot{
   background: #888;
   border-radius: 50%;
   display: inline-block;
@@ -222,9 +222,13 @@ ol li{
 } 
 
 .dots {
-  position: absolute;
-  bottom: -1020px;
-  left: 660px;
+  display: flex;
+  justify-content: center;
+}
+
+.dots ol {
+  margin: 0;
+  padding: 0;
 }
 
 .dots ol li.active {
@@ -254,3 +258,55 @@ ol li{
       opacity: 1  
   }  
 }  
+
+/* bottom section */
+
+.team-content {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  width: 64%;
+  height: 180px;
+}
+
+.team-content .title-container div {
+  color: #afb4be;
+}
+
+.team-text {
+  display: inline-block;
+  padding-top: 72px;
+  padding-left: 30px;
+  line-height: 26px;
+  font-family: sans-serif;
+  font-weight: 100;
+}
+
+.mountain-tab-container {
+  width: 100%;
+  height: 40px;
+  background-color: #3c4a63;
+}
+
+.mountain-tab-container ol {
+  display: flex;
+  align-items: center;
+  margin-left: 13%;
+}
+
+.mountain-tab-container ol li {
+  height: 40px;
+  padding-bottom: 0;
+  padding-left: 1.5%;
+  padding-right: 1.5%;
+  font-size: 24px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  color:  #afb4be;
+}
+
+.mountain-tab-container .active {  
+  background-color: #afb4be;
+  color: #404f6c;
+  text-decoration: underline;
+}
