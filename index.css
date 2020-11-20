@@ -161,7 +161,6 @@ header ul {
   max-width: 1600px;
   height: 195px;
   width: 100%;
-  background-color: #3c4a63;
   vertical-align: baseline;
   background: rgb(60, 74, 99, 0.7);
   display: flex;
@@ -317,6 +316,41 @@ ol{
   background-repeat: no-repeat;
   background-size: cover;
   height: 545px;
+}
+
+.schedule {
+  position: relative;
+  left: 290px;
+  top: 100px;
+  width: 350px;
+  height: 230px;
+  background-color: rgb(255,255,255, 0.7);
+}
+
+.schedule span {
+  margin-left: 36px;
+  font-size: 38px;
+  font-family: 'Oswald', sans-serif;
+  color: #404f6c;
+}
+
+table, th, td {
+  border-collapse: collapse;
+  margin-left: 36px;
+  /* margin-right: 36px; */
+  margin-top: 0px;
+  margin-bottom: 36px;
+}
+
+th, td {
+  padding-right: 45px;
+  text-align: left;
+  font-family: sans-serif;
+  font-weight: 100;   
+}
+
+table tr:nth-child(3) {
+  line-height: 5.5;
 }
 
 /* footer */
