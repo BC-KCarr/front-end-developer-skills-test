@@ -4,7 +4,6 @@ body, html {
   padding: 0;
   font-family: 'Open Sans', sans-serif;
   overflow-x: hidden;
-  /* overflow-y: scroll; */
   scroll-behavior: smooth; 
 }
 .outside-container{
@@ -87,7 +86,6 @@ header ul {
   font-size: 14px;
 }
 
-
 .menu-btn {
   visibility: hidden;
 }
@@ -107,13 +105,10 @@ header ul {
   justify-content: space-between;
 }
 
-
-
 .history-content {
   display: flex;
   flex-direction: column;
   width: 70%;
-  
 }
 
 .title-container {
@@ -398,6 +393,10 @@ footer img {
 }
 
 @media only screen and (max-width: 500px) {
+  .nav img {
+    margin-left: 30%;
+    padding: 0;
+  }
   .menu-btn {
     visibility: visible;
     cursor: pointer;
@@ -429,14 +428,6 @@ footer img {
 
   .nav-item:nth-child(2) {
     transition-delay: 0.02s;
-  }
-
-  .nav-item:nth-child(3) {
-    transition-delay: 0.03s;
-  }
-
-  .footer-container-contact {
-    display: none;
   }
 
   .schedule {

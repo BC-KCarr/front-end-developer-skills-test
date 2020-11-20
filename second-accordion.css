@@ -5,6 +5,7 @@
   cursor: pointer;
   transition: all 0.5s ease-out;
   padding-top: 10px;
+  display: none;
 }
 
 .menu-btn-middle.close {
@@ -31,6 +32,11 @@
   background: black;
   transition: all 0.5s ease-out;
 }
+
+.middle-nav {
+  display: flex;
+  justify-content: space-around;
+}
 .nav-links-colored {
   display: flex;
   justify-content: flex-end;
@@ -45,13 +51,10 @@
   font-size: 14px;
 }
 
-.menu-btn-middle {
-  visibility: hidden;
-}
 
 @media only screen and (max-width: 500px) {
   .menu-btn-middle {
-    visibility: visible;
+    display: block;
     cursor: pointer;
   }
 
@@ -59,18 +62,21 @@
     flex-direction: column;
     text-align: center;
     width: 100%;
-    visibility: hidden;
+    display: none;
     padding: 0;
   }
 
   .nav-links-colored a {
     display: block;
     border-bottom: 1px solid #EAEAEB;
-    padding-top: 53px;
+  }
+
+  .middle-nav {
+    justify-content: space-between;
   }
 
   .nav-links-colored.show {
-    visibility: visible;
+    display: block;
   }
 
   /* Adding a transition delay to the items in the navigation menu */
@@ -83,11 +89,4 @@
     transition-delay: 0.02s;
   }
 
-  .nav-item-middle:nth-child(3) {
-    transition-delay: 0.03s;
-  }
-
-  .nav img {
-    display: none;
-  }
 }
