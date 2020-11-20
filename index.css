@@ -94,7 +94,9 @@ header ul {
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .nav-links-colored {
@@ -150,3 +152,105 @@ header ul {
   font-family: sans-serif;
   font-weight: 100;
 }
+
+.image-carosel-container {
+  max-width: 1600px;
+  height: 195px;
+  width: 100%;
+  background-color: #3c4a63;
+  vertical-align: baseline;
+  background: rgb(60, 74, 99, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slidercontainer {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  max-width: 1600px;
+  margin: auto; 
+}
+
+.showSlide {  
+  display: none  
+}  
+.showSlide img {  
+  width: 218px;
+  height: 133px;
+  margin-right: 10px;
+}  
+
+.left, .right {  
+  cursor: pointer;  
+  position: absolute;  
+  top: 50%;  
+  width: auto;  
+  padding: 16px;  
+  margin-top: -22px;  
+  color: black;  
+  font-weight: bold;  
+  font-size: 24px;  
+  transition: 0.6s ease;  
+  border-radius: 0 3px 3px 0;  
+}  
+.right {  
+  right: 0;  
+  border-radius: 3px 0 0 3px;  
+}  
+  .left:hover, .right:hover {  
+      background-color: rgba(115, 115, 115, 0.8);  
+  }  
+  
+.active {  
+  background-color: #717171;  
+}
+
+ol{
+  list-style: none;
+  width:100%;
+}
+ol li{
+  background: #888;
+  border-radius: 50%;
+  display: inline-block;
+  width:5px;
+  height:5px;
+  cursor: pointer;
+  color: #333;
+} 
+
+.dots {
+  position: absolute;
+  bottom: -1020px;
+  left: 660px;
+}
+
+.dots ol li.active {
+  border: 1px solid white;
+}
+/* Fading animation */  
+.fade {  
+  -webkit-animation-name: fade;  
+  -webkit-animation-duration: 2.5s;  
+  animation-name: fade;  
+  animation-duration: 2.5s;  
+}  
+@-webkit-keyframes fade {  
+  from {  
+      opacity: .4  
+  }  
+  to {  
+      opacity: 1  
+  }  
+}  
+
+@keyframes fade {  
+  from {  
+      opacity: .4  
+  }  
+  to {  
+      opacity: 1  
+  }  
+}  
