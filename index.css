@@ -1,0 +1,152 @@
+body, html {
+  height: 100vh;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.bg-image-top {
+  background-image: url('./images/backgroundImage1.png');
+  height: 824px;
+  max-width: 1600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header ul {
+  list-style-type: none;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav img {
+  margin-top: 10px;
+}
+
+.bg-image-top img {
+  width: 40px;
+}
+
+.menu-btn {
+  position: absolute;
+  z-index: 3;
+  right: 35px;
+  top: 60px;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+}
+
+.menu-btn.close {
+  transform: rotate(180deg);
+}
+
+/* Styling the three lines to make it an X */
+.menu-btn.close .btn-line:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-btn.close .btn-line:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-btn.close .btn-line:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -6px);
+}
+
+.menu-btn .btn-line {
+  width: 28px;
+  height: 3px;
+  margin: 0 0 5px 0;
+  background: black;
+  transition: all 0.5s ease-out;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-links a {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  color: #f7fafc;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+
+
+.menu-btn {
+  visibility: hidden;
+}
+
+/* Middle section  */
+
+.bg-image-middle {
+  background-image: url('./images/bg-image-2.jpg');
+  height: 904px;
+  max-width: 1600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-links-colored {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-links-colored a {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  color: #3f4f6c;
+  font-size: 14px;
+}
+
+.history-content {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  
+}
+
+.title-container {
+  padding: 0;
+  margin: 0;
+}
+
+.title-container div {
+  font-size: 145px;
+  color: #6d7f9b;
+  font-family: 'Oswald', sans-serif;
+  margin: 0;
+  padding-bottom: 0;
+}
+
+.title-container span {
+  color: #3f4f6c;
+  font-size: 30px;
+  line-height: 10px;
+  height: 124px;
+  vertical-align: middle;
+  margin-left: -27px;
+}
+
+.history-text {
+  margin: 0;
+  padding: 0;
+  width: 95%;
+  position: relative;
+  left: 76px;
+  line-height: 26px;
+  font-family: sans-serif;
+  font-weight: 100;
+}
