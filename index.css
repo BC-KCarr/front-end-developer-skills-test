@@ -372,3 +372,98 @@ footer img {
   height: 40px;
   width: 162px
 }
+
+/* media queries */
+
+@media only screen and (max-width: 950px) {
+  .showSlide img {
+    width: 150px;
+    height: 100px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .team-content {
+    flex-direction: column;
+    height: auto;
+    padding: 0;
+  }
+
+  .team-text {
+    margin: 0;
+    padding: 0;
+  }
+
+  .schedule {
+    left: 100px;
+  }
+
+  .showSlide img {
+    width: 120px;
+    height: 80px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .menu-btn {
+    visibility: visible;
+    cursor: pointer;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    visibility: hidden;
+    padding: 0;
+  }
+
+  .nav-links a {
+    display: block;
+    border-bottom: 1px solid #EAEAEB;
+    padding-top: 53px;
+  }
+
+  .nav-links.show {
+    visibility: visible;
+  }
+
+  .hero.show {
+    margin-top: 200px;
+    transition-duration: 0.8s;
+    transition-property: margin-top;
+  }
+
+  .hero.close {
+    transition-duration: 0.5s;
+  }
+
+  /* Adding a transition delay to the items in the navigation menu */
+  .nav-item:nth-child(1) {
+    transition-delay: 0.01s;
+    text-align: center;
+  }
+
+  .nav-item:nth-child(2) {
+    transition-delay: 0.02s;
+  }
+
+  .nav-item:nth-child(3) {
+    transition-delay: 0.03s;
+  }
+
+  .footer-container-contact {
+    display: none;
+  }
+
+  .schedule {
+    left: 10px;
+  }
+
+  .showSlide img {
+    width: 100px;
+    height: 60px;
+  }
+
+}
+

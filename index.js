@@ -2,7 +2,7 @@
 const toggleBtn = document.querySelector('.menu-btn')
 const nav = document.querySelector('.nav-links')
 const navItems = document.querySelectorAll('.nav-items')
-const hero = document.querySelector('.hero')
+const hero = document.querySelector('.bg-image-top')
 
 toggleBtn.addEventListener('click', toggleMenu)
 
