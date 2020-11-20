@@ -310,3 +310,31 @@ ol{
   color: #404f6c;
   text-decoration: underline;
 }
+
+.bg-imgage-bottom {
+  background-image: url('./images/bg-image-bottom.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 545px;
+}
+
+/* footer */
+footer {
+  width: 100%;
+  height: 75px;
+  background-color: #404f6c;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer span {
+  font-size: 13px;
+  color: #526387;
+}
+
+footer img {
+  height: 40px;
+  width: 162px
+}
