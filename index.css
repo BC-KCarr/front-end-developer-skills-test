@@ -20,7 +20,7 @@ body, html {
   background-size: cover;
 }
 
-header ul {
+ul {
   list-style-type: none;
 }
 
@@ -33,6 +33,11 @@ header ul {
   margin-top: 10px;
 }
 
+.logo {
+  width: 0;
+
+}
+
 .bg-image-top img {
   width: 40px;
 }
@@ -41,7 +46,7 @@ header ul {
   position: absolute;
   z-index: 3;
   right: 35px;
-  top: 60px;
+  top: 20px;
   cursor: pointer;
   transition: all 0.5s ease-out;
 }
@@ -392,7 +397,7 @@ footer img {
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 660px) {
   .nav img {
     margin-left: 30%;
     padding: 0;
